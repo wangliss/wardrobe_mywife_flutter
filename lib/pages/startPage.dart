@@ -135,7 +135,7 @@ class _startPageState extends State<startPage> {
             child: defBtn(
               title: "GO! GO !GO!",
               onTap: () {
-                Get.toNamed(Routes.Index);
+                Get.toNamed(Routes.login);
               },
             ),
           )

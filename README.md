@@ -1,1 +1,2 @@
-一个衣橱关联
+一个衣橱管理app
+flutter +getx

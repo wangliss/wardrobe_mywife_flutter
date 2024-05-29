@@ -74,7 +74,7 @@ class _indexState extends State<index> {
                 ),
               ],
               selectedIndex: _selectedIndex,
-              onTabChange: (index) {
+              onTabChange: (int index) {
                 setState(() {
                   _selectedIndex = index;
                 });

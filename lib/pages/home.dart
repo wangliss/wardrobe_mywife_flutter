@@ -5,6 +5,8 @@ import 'package:get/get.dart';
 import 'package:line_icons/line_icon.dart';
 import 'package:line_icons/line_icons.dart';
 
+import '../routes/app_routes.dart';
+
 class home extends StatefulWidget {
   const home({super.key});
 
@@ -112,42 +114,24 @@ class _homeState extends State<home> {
       primary: true,
       actions: [
         Padding(
-          padding: EdgeInsets.only(right: 40.w),
-          child: InkWell(
-            onTap: () {},
-            child: Container(
-              width: 55.w,
-              height: 55.w,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(50),
-              ),
-              child: Center(
-                child: Icon(
-                  Icons.search,
-                  size: 50.sp,
-                ),
-              ),
-            ),
-          ),
+          padding: EdgeInsets.only(right: 1.w),
+          child: IconButton(
+            icon: const Icon(Icons.search),
+            iconSize: 40.w,
+            onPressed: (){
+              Get.toNamed(Routes.searchMyWardrobe);
+            },
+          )
         ),
         Padding(
           padding: EdgeInsets.only(right: 40.w),
-          child: InkWell(
-            onTap: () {},
-            child: Container(
-              width: 55.w,
-              height: 55.w,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(50),
-              ),
-              child: Center(
-                child: Icon(
-                  Icons.more_horiz,
-                  size: 50.sp,
-                ),
-              ),
-            ),
-          ),
+          child: IconButton(
+            icon: const Icon(Icons.more_horiz),
+            iconSize: 40.w,
+            onPressed: (){
+              Get.toNamed(Routes.searchMyWardrobe);
+            },
+          )
         ),
       ],
     );

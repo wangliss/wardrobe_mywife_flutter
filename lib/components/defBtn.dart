@@ -46,7 +46,7 @@ class defBtn extends StatelessWidget {
             style: TextStyle(
               color: Colors.white,
               fontSize: textSize,
-              fontWeight: FontWeight.bold
+              fontWeight: FontWeight.w400
             ),
           ),
         ),
